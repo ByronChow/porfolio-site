@@ -1,0 +1,164 @@
+@font-face {font-family: Apercu; src: url(z_font/apercu.otf);}
+@font-face {font-family: Apercumono; src: url(z_font/apercumono.otf);}
+@font-face {font-family: Aperculight; src: url(z_font/aperculight.otf);}
+
+body, html {background: #000; color: #fff; }
+
+
+  #bio {
+  font-family: 'apercumono', Helvetica, sans-serif;
+  font-weight: 500;
+  top: 20vh;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20%;
+  line-height: 3.5vw;
+  position: fixed;
+  opacity:.7;
+  z-index:-1;}
+
+  .nav{
+    background-color: black;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    position:fixed;
+    width:100%;
+    height: 12vh;
+    top:0%;
+    left:0%;
+    z-index: 200;
+  }
+
+.about{
+  position:fixed;
+  left: 10%;
+  top: 3vh;
+  font-size: 3vh;
+  letter-spacing: 1px;
+  font-family: 'Apercu', Helvetica, sans-serif;
+}
+
+a:link {color: white; text-decoration: none;}
+a:hover {color: gold ; text-decoration: underline wavy blue;}
+
+.contact{
+  position:fixed;
+  right: 10%;
+  top: 3vh;
+  font-size: 3vh;
+  letter-spacing: 1px;
+  font-family: 'Apercu', Helvetica, sans-serif;
+}
+
+.logo img{
+  position:fixed;
+  width:8vh;
+  top:2vh;
+  left:44vw;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+        transition:         transform 2s ease-in-out;
+
+}
+.logo img:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+.text{
+  background-color: black;
+  width:100%;
+  height:100%;
+  padding: 0px;
+  font-family: 'Apercu', Helvetica, sans-serif;
+  margin-bottom: 4vh;
+
+}
+.title{
+  float:left;
+  font-size: 3vw;
+  width:100%;
+  padding: 3%;
+  background-color: black;
+}
+.brief{
+font-size: 1.5vw;
+line-height: 3vw;
+letter-spacing: .5px;
+padding: 3%;
+font-family: 'Aperculight', Helvetica, sans-serif;
+width:92%;
+float:left;
+background-color: black;
+}
+
+.toc{
+font-size: 1.5vw;
+line-height: 3vw;
+letter-spacing: .5px;
+padding: 3%;
+font-family: 'Aperculight', Helvetica, sans-serif;
+width:27%;
+float:left;
+background-color: black;
+}
+
+.content{
+  position: absolute;
+  width:84%;
+  top:22vh;
+  left:8%;
+}
+.coverimage{width:100%; float:left; padding: 1% 0%;}
+
+.half{width:48%; float:left; padding: 1%;}
+
+.half2{width:48%; float:left; padding: 15% 1% 1% 1%;}
+
+.half3{width:28%; float:left; padding:1%;}
+
+.half4{width:68%; float:left; padding: 15% 1% 1% 1%;}
+
+.halfstag{
+  width:80%;
+  float:left;
+  padding: 1%;
+}
+
+.break{height:3vh;
+  float:left;
+  padding:5%;
+  width:100%;
+}
+
+.project09{
+  float:right;
+  background-color: none;
+  font-size: 1vw;
+  text-align: center;
+  font-family: 'Apercu', Helvetica, sans-serif;
+
+}
+
+.imagesize{width:100%;}
+
+.image-holder {
+  height: 100%;
+  width: 40%;
+  position:relative;
+}
+.image-holder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,255, 0.6);
+  transition: all .3s linear;
+}
+.image-holder:hover:before {background: none;}
