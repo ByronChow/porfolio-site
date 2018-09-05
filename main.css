@@ -44,7 +44,7 @@ body, html {background: #000; color: #fff; }
 a:link {color: white; text-decoration: none;}
 a:hover {color: gold ; text-decoration: underline wavy blue;}
 a:visited {color: white; text-decoration: none;}
-
+/*brian was here*/
 .contact{
   position:fixed;
   right: 10%;
