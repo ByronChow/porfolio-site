@@ -2,57 +2,78 @@
 @font-face {font-family: Apercumono; src: url(z_font/apercumono.otf);}
 @font-face {font-family: Aperculight; src: url(z_font/aperculight.otf);}
 
-body, html {background: #000; color: #fff; }
+body, html {background: #000; color: #fff;
+font-family: 'apercumono', Helvetica, sans-serif;
+font-size: 1.1vw;
+line-height: 2.2vw;
+}
 
 
-  #bio {
-  font-family: 'apercumono', Helvetica, sans-serif;
-  font-weight: 500;
-  top: 20vh;
-  font-size: 1.5vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20%;
-  line-height: 3.5vw;
-  position: fixed;
-  opacity:.7;
-  z-index:-1;}
+  #bio {position: fixed; width: 26%; top: 20%; left: 5%}
 
-  .nav{
-    background-color: black;
-    list-style: none;
-    color: #fff;
-    text-align: center;
-    position:fixed;
-    width:100%;
-    height: 12vh;
-    top:0%;
-    left:0%;
-    z-index: 200;
-  }
+  a.greyfade{
+    opacity: 0.85;
+    filter: gray;
+    -webkit-filter: grayscale(1);}
 
-.about{
+  a.greyfade:hover {
+    transition: .3s ease;
+    opacity: 1;
+    filter: none;
+    -webkit-filter: none;}
+
+.nav{
+  background-color: black;
+  list-style: none;
+  color: #fff;
   position:fixed;
-  left: 10%;
-  top: 3vh;
-  font-size: 3vh;
-  letter-spacing: 1px;
-  font-family: 'Apercu', Helvetica, sans-serif;
+  width:100%;
+  height: 15%;
+  top:0%;
+  left:0%;
+  z-index: 200;
 }
 
 a:link {color: white; text-decoration: none;}
-a:hover {color: gold ; text-decoration: underline wavy blue;}
+a:hover {color: gold}
 a:visited {color: white; text-decoration: none;}
-/*brian was here*/
-.contact{
+
+.home{left: 5%;}
+.project{left: 34%;}
+.about{left: 67%;}
+
+.icon{right: 2%;
+      bottom:2%;
+      position: fixed;}
+
+.smalllogo{width:8vh}
+
+
+.logo{
+  position: fixed;
+  bottom:3vh;
+  right: 3vh;
+  width:8vh;
+  z-index: 300;
+}
+
+.spin img{
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+        transition:         transform 2s ease-in-out;
+}
+.spin img:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.navtype {
   position:fixed;
-  right: 10%;
-  top: 3vh;
   font-size: 3vh;
+  top: 3vh;
   letter-spacing: 1px;
   font-family: 'Apercu', Helvetica, sans-serif;
 }
+
 
 .logo img{
   position:fixed;
@@ -70,96 +91,75 @@ a:visited {color: white; text-decoration: none;}
 
 
 .text{
-  background-color: black;
   width:100%;
   height:100%;
-  padding: 0px;
-  font-family: 'Apercu', Helvetica, sans-serif;
   margin-bottom: 4vh;
-
-}
-.title{
-  float:left;
-  font-size: 3vw;
-  width:100%;
-  padding: 3%;
-  background-color: black;
-}
-.brief{
-font-size: 1.5vw;
-line-height: 3vw;
-letter-spacing: .5px;
-padding: 3%;
-font-family: 'Aperculight', Helvetica, sans-serif;
-width:92%;
-float:left;
-background-color: black;
 }
 
-.toc{
-font-size: 1.5vw;
-line-height: 3vw;
-letter-spacing: .5px;
-padding: 3%;
-font-family: 'Aperculight', Helvetica, sans-serif;
-width:27%;
-float:left;
-background-color: black;
-}
 
-.content{
-  position: absolute;
-  width:84%;
-  top:22vh;
-  left:8%;
-}
-.coverimage{width:100%; float:left; padding: 1% 0%;}
 
-.half{width:48%; float:left; padding: 1%;}
+.coverimage{width:100%; float:left; padding: 0 0 2% 0%;}
+.half{width:49%; float:left; padding: 0 2% 2% 0;}
+.half00{width:49%; float:left; padding: 0 0 2% 0;}
+.half2{width:49%; float:left; padding: 15% 0% 0% 0%;}
+.half3{width:27%; float:left; padding: 0 2% 2% 0;}
+.half4{width:69%; float:left; padding: 0 0 2% 0;}
+.half5{width:27%; float:left; padding: 0 2% 2% 2%;}
 
-.half2{width:48%; float:left; padding: 15% 1% 1% 1%;}
+.half6{width:56.5%; float:left; padding: 0 0 2% 0;}
+.half7{width:41.5%; float:left; padding: 0 0 2% 2%;}
 
-.half3{width:28%; float:left; padding:1%;}
+.half8{width:56.5%; float:left; padding: 0 0 2% 2%;}
+.half9{width:41.5%; float:left; padding: 0 0 2% 0;}
 
-.half4{width:68%; float:left; padding: 15% 1% 1% 1%;}
+.imagepadding{padding: 0 10% 0 5%}
 
-.halfstag{
-  width:80%;
-  float:left;
-  padding: 1%;
-}
+.break{height:1%; float:left; padding:5%; width:100%;}
 
-.break{height:3vh;
-  float:left;
-  padding:5%;
-  width:100%;
-}
-
-.project09{
-  float:right;
+.copyright{
+  position: fixed;
+  left:5%;
+  bottom: 2%;
   background-color: none;
-  font-size: 1vw;
   text-align: center;
-  font-family: 'Apercu', Helvetica, sans-serif;
-
 }
 
-.imagesize{width:100%;}
+.content{position: absolute; width:66%; right:0%; top:20%; overflow: hidden;}
+.projecticonwrap{width:100%; background-color: none; padding-bottom: 4%; float:left;}
+.imagesize{width:100%; float:left}
 
-.image-holder {
-  height: 100%;
-  width: 40%;
-  position:relative;
+.toc{width:27%; float:left; width:100%;}
+
+.bar{
+height:100%;
+background-color: blue;
+width:2%;
+position: fixed;
+left:0%;
+top:0%;
+z-index:1000;
 }
-.image-holder:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,255, 0.6);
-  transition: all .3s linear;
+
+.title{width:40%; float:left; padding: 0 5% 0 5%}
+
+.descriptor{width:40%; float:left;}
+
+.tab{padding: 0 0 0 10%;}
+
+.hiddenimg {display: none;}
+
+.hiddentxt {font-weight: bold;}
+
+.hiddentxt a {text-decoration: none;}
+
+.hiddenclick {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
 }
-.image-holder:hover:before {background: none;}
+
+.hiddenclick a {text-decoration: none;}
+
+.hiddenclick a:visited {text-decoration: none;}
+
+.hiddentxt:hover ~ .hiddenimg {display: block;}
